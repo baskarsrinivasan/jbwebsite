@@ -29,6 +29,8 @@ class Home extends MY_Controller {
 	public function index()
 	{
 		$data["category_list"]= $this->home_model->category_list();
+		$data["featured_product"]= $this->home_model->product_list(1);
+	
 		$this->load->view('home',$data);
 	}
 	

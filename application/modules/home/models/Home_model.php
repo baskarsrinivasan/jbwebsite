@@ -14,7 +14,17 @@ class Home_model extends CI_Model
         return array();
     }
     
-   
+    public function product_list($product_type) {
+        $this->db->select('*');
+        $this->db->from('product_information');
+        $this->db->where('product_type', $product_type);
+        $this->db->where('status', 1);
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {   
+            return $query->result_array();
+        }
+        return array();
+    }
    
 }
 ?>

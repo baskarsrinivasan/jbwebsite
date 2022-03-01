@@ -83,55 +83,38 @@
             </div>
 
             <div id="so_categories_16425506561529398732" class="so-categories module custom-slidercates">
-                <h3 class="modtitle"><span>Shop by Categories</span></h3>            
+                <h3 class="modtitle"><span>Featured Products</span></h3>            
                 <div class="form-group">
                   <a class="viewall" href="#">View All</a>                               
                 </div>
             
                 <div class="modcontent">
                     <div class="yt-content-slider cat-wrap" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column00="5" data-items_column0="5" data-items_column1="4" data-items_column2="3"  data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
+                        <?php
+                        foreach($featured_product as $row)
+                        {
+                        
+                        ?>
                         <div class="content-box">
                             <div class="image-cat">
-                              <a href="#" title="Electronics">
-                                <img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate1.jpg" alt="img">
+                              <a href="<?php echo base_url();?>" title="<?php echo $row['product_name'];?>">
+                                <img src="<?php echo $row['image'];?>" alt="img">
                               </a>
                             </div>
                             <div class="cat-title">
-                              <a href="#" title="Electronics">
-                                Electronics
+                              <a href="<?php echo base_url();?>" title="<?php echo $row['product_name'];?>">
+                              <?php echo $row['product_name'];?>
                               </a>
                             </div>      
                         </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Iwatch & Accessories"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate2.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Iwatch & Accessories">Electronics</a></div>      
-                        </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Furnicoms"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate3.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Furnicoms">Furnicoms</a></div>      
-                        </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Fashion"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate4.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Fashion">Fashion</a></div>      
-                        </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Health & Beauty"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate5.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Health & Beauty">Health & Beauty</a></div>      
-                        </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Electronics"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate1.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Electronics">Electronics</a></div>      
-                        </div>
-                        <div class="content-box">
-                            <div class="image-cat"><a href="#" title="Watches"><img src="<?php echo base_url()?>assets/image/catalog/demo/category/cate3.jpg" alt="img"></a></div>
-                            <div class="cat-title"><a href="#" title="Watches">Watches</a></div>      
-                        </div>
+                      <?php } ?>
                     </div>
                 </div>
             </div>
+            
 
             <div id="so_category_slider_188" class="so-category-slider container-slider module cate-slider1">
-                <h4 class="modtitle">Flash Sale</h4>
+                <h4 class="modtitle">Deals of the day</h4>
 
                 <div class="modcontent">
                     <div class="page-top">
