@@ -6,60 +6,7 @@
     <!-- Header Container  -->
     <header id="header" class=" typeheader-2">
     <!-- Header Top -->
-    <div class="header-top hidden-compact">
-        <div class="container">
-            <div class="row">
-                <div class="header-top-left col-lg-8 col-md-8 col-sm-6 col-xs-3">
-                    <div class="hidden-md hidden-sm hidden-xs welcome-msg">Welcome to Our Online Store!</div>
-                    <div class="telephone hidden-xs hidden-sm hidden-md" >
-                        <ul><li><i class="fa fa-envelope"></i>Email: support@srijbhealthcare.com</li><li><i class="fa fa-phone"></i>Hotline: (+91) 8220460616 </li></ul>
-                    </div>
-                    <ul class="account hidden-lg ">
-                        <li class="account" id="my_account">
-                            <a href="#" title="My Account " class="btn-xs dropdown-toggle" data-toggle="dropdown"> <span class="hidden-xs">My Account </span>  <span class="fa fa-caret-down"></span>
-                            </a>
-                            <ul class="dropdown-menu ">
-                                <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
-                                <li><a href="login.html"><i class="fa fa-pencil-square-o"></i> Login</a></li>
-                            </ul>
-                        </li>
-                    </ul>  
-                </div>
-                <div class="header-top-right collapsed-block col-lg-4 col-md-4 col-sm-6 col-xs-9">
-                    <div class="inner"> 
-                        <ul class="top-link list-inline lang-curr">
-                            <li class="currency">
-                                <div class="btn-group currencies-block">
-                                    <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data" id="currency">
-                                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <span class="icon icon-credit "></span> Indian Rupee  <span class="fa fa-angle-down"></span>
-                                        </a>
-                                       
-                                    </form>
-                                </div>
-                            </li>   
-                            <li class="language">
-                                <div class="btn-group languages-block ">
-                                    <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data" id="bt-language">
-                                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <img src="<?php echo base_url()?>assets/image/catalog/flags/gb.png" alt="English" title="English">
-                                            <span class="">English</span>
-                                            <span class="fa fa-angle-down"></span>
-                                        </a>
-                                       
-                                    </form>
-                                </div>
-                                
-                            </li>
-                        </ul>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //Header Top -->
+    
 
     <!-- Header center -->
     <div class="header-middle">
@@ -67,7 +14,7 @@
             <div class="row">
                 <!-- Logo -->
                 <div class="navbar-logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="logo"><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/image/catalog/logo2.png" title="SRI JB HEALTH CARE LOGO" alt="SRI JB HEALTH CARE LOGO" /></a></div>
+                    <div class="logo"><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/image/catalog/logo2.png" title="SRI JB HEALTH CARE LOGO" alt="SRI JB HEALTH CARE LOGO" style="margin-top:-40px" height="100px"/></a></div>
                 </div>
                 <!-- //end Logo -->
                 <!-- Search -->
